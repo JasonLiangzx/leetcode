@@ -1,10 +1,8 @@
 package com.jason.demo.leetcode;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
-import java.text.MessageFormat;
+import static org.junit.Assert.assertEquals;
 
 public class LeetcodeTest {
 
@@ -82,5 +80,19 @@ public class LeetcodeTest {
 
         System.out.println(letterCombinations.letterCombinations("2"));
         System.out.println(letterCombinations.letterCombinations("23"));
+    }
+
+    @Test
+    public void fourSumTest(){
+        FourSum fourSum = new FourSum();
+        System.out.println(fourSum.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0));
+    }
+
+    @Test
+    public void removeNthFromEnd(){
+        RemoveNthFromEnd removeNthFromEnd = new RemoveNthFromEnd();
+        RemoveNthFromEnd.ListNode listNode = new RemoveNthFromEnd.ListNode(1);
+        RemoveNthFromEnd.ListNode result = removeNthFromEnd.removeNthFromEnd(listNode, 1);
+        System.out.println(removeNthFromEnd);
     }
 }
