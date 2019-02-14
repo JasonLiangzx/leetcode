@@ -9,13 +9,13 @@ public class LeetcodeTest {
     @Test
     public void test2(){
         assertEquals(LengthOfSubString.lengthOfLongestSubstring("a"), 1);
-        // assert LengthOfSubString.lengthOfLongestSubstring("a") == 1;
-        // assert LengthOfSubString.lengthOfLongestSubstring("abb") == 3;
-        // assert LengthOfSubString.lengthOfLongestSubstring("aab") == 2;
-        // assert LengthOfSubString.lengthOfLongestSubstring("aba") == 2;
-        // assert LengthOfSubString.lengthOfLongestSubstring("abcb") == 3;
-        // assert LengthOfSubString.lengthOfLongestSubstring("abcdafb") == 5;
-        // assert LengthOfSubString.lengthOfLongestSubstring("ohomm") == 3;
+         assert LengthOfSubString.lengthOfLongestSubstring("a") == 1;
+         assert LengthOfSubString.lengthOfLongestSubstring("abb") == 3;
+         assert LengthOfSubString.lengthOfLongestSubstring("aab") == 2;
+         assert LengthOfSubString.lengthOfLongestSubstring("aba") == 2;
+         assert LengthOfSubString.lengthOfLongestSubstring("abcb") == 3;
+         assert LengthOfSubString.lengthOfLongestSubstring("abcdafb") == 5;
+         assert LengthOfSubString.lengthOfLongestSubstring("ohomm") == 3;
     }
 
     @Test
@@ -94,5 +94,11 @@ public class LeetcodeTest {
         RemoveNthFromEnd.ListNode listNode = new RemoveNthFromEnd.ListNode(1);
         RemoveNthFromEnd.ListNode result = removeNthFromEnd.removeNthFromEnd(listNode, 1);
         System.out.println(removeNthFromEnd);
+    }
+
+    @Test
+    public void GenerateParenthesisTest(){
+        GenerateParenthesis generateParenthesis = new GenerateParenthesis();
+        System.out.println(generateParenthesis.generateParenthesis(3));
     }
 }
